@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+.menuOpen{
+    display: block;
+    background-image: url(assets/burg.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 15px;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+    z-index: 1;
+}
+.menu_open{
+    transform: translateX(0);
+}
+.menuClose{
+    display: block;
+    background-color: #182D7C;
+    background-image: url(assets/burg.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 15px;
+}
+.menuList{
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(24, 45, 124, 0.6);
+    background-color: white;
+}
+.menuList-item{
+    color: #182D7C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+} 
+.buttonLink{
+    z-index: 0;
+    position: absolute;
+    right: 15px;
+    
+}
+
+.buttonLink button{
+    z-index: 0;
+    position: absolute;
+    right: 15px;
+    bottom: 11px;
+    width: 146px;
+    height: 37px;
+    background-color: #12D692;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+
+
+.sectionHome{
+    background-image: url(assets/pcei.png);
+    background-repeat: no-repeat;
+    background-position: center 35vh;
+    background-color: #182D7C;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+.sectionHome h1{
+    font-size: 40px;
+    text-align: center;
+}
+.sectionHome img{
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+.sectionHome-textHome{
+    margin-top: 110px;
+}
+
+
+.sectionPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 98vw;
+}
+.sectionPrincipal-divCourses{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sectionPrincipal-divCourses p:nth-child(1){
+    color: #12D692;
+}
+.sectionPrincipal-divCourses h1{
+    font-size: 30px;
+}
+.sectionPrincipal-divSlider{
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.6); 
+    background-color: #F7F8FC;
+}
+.sectionPrincipal-divSlider img{
+    width: 100%;
+}
+.sectionPrincipal-divSlider h2{
+    font-size: 1.8rem;
+}
+.sectionPrincipal-divSlider-text{
+    width: 80%;
+    line-height: 30px;
+}
+.sectionPrincipal-divSlider-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sectionPrincipal-divSlider-div img{
+    width: 30px;
+}
+.sectionPrincipal-divSlider-div p{
+    font-size: 13px;
+    font-weight: bold;
+}
+.sectionPrincipal-divLuv{
+    width: 90%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.sectionPrincipal-divLuv h4{
+    color: #A4DAF2;
+    width: 100%;
+    text-align: center;
+}
+.sectionPrincipal-divLuv h2{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+.sectionPrincipal-divLuv p{
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.sectionPrincipal-divLuv img{
+    margin-top: 30px;
+}
+.sectionPrincipal-divAssociate{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sectionPrincipal-divAssociate h4{
+    color: #A4DAF2;
+}
+.sectionPrincipal-divAssociate h2{
+    font-size: 30px;
+}
+.sectionPrincipal-divAssociate p{
+    text-align: center;
+    width: auto;
+    line-height: 30px;
+}
+.sectionPrincipal-divAssociate-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectionPrincipal-divAssociate-divFirst, .sectionPrincipal-divAssociate-divSecond{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.sectionPrincipal-divAssociate-div img{
+    width: 50px;
+}
+.sectionPrincipal-divTestimonial{
+    width: 99.5vw;
+    height: 200vh;
+    background-color: #183A9C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectionPrincipal-divTestimonial-testimonial{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectionPrincipal-divTestimonial-testimonial h4{
+    color: #9FB4EB;
+}
+.sectionPrincipal-divTestimonial-testimonial h2{
+    font-size: 30px;
+    color: white;
+}
+.sectionPrincipal-divTestimonial-testimonialParag{
+    color: #9FB4EB;
+}
+.sectionPrincipal-divTestimonial-testimonialParagS{
+    color: white;
+    font-weight: bold;
+}
+.sectionPrincipal-divTestimonial-testimonial p{
+    width: 70%;
+}
+.sectionPrincipal-divTestimonial-testimonialPerson{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sectionPrincipal-divTestimonial-testimonialPerson p{
+    color: #9FB4EB;
+}.sectionPrincipal-divTestimonial-purchase{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.sectionPrincipal-divTestimonial-purchaseDiv{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 5%;
+    color: black;
+}
+.sectionPrincipal-divTestimonial-purchaseDiv-value{
+    display: flex;
+}
+.sectionPrincipal-divTestimonial-purchaseDiv-valueImages{
+    display: flex;
+    flex-direction: column;
+}
+.sectionPrincipal-divTestimonial-purchaseDiv h2{
+    color: #A4DAF2;
+    text-align: center;
+    margin-top: 10px;
+}
+.sectionPrincipal-divTestimonial-purchaseDiv p{
+    line-height: 40px;
+    margin-left: 10px;
+}
+.sectionPrincipal-divTestimonial-purchaseDiv button{
+    position: absolute;
+    left: 540px;
+    width: 186px;
+    height: 67px;
+    background-color: #12D692;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.sectionPrincipal-divTestimonial-Finish{
+    background-color:#F7F8FC;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sectionPrincipal-divTestimonial-Finish h2{
+    font-size: 30px;
+    width: 90%;
+}
+.sectionPrincipal-divTestimonial-Finish p{
+    width: 90%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email{
+    text-shadow: #000 2px 3px 2px;
+    width: 186px;
+    height: 67px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#submit{
+    width: 186px;
+    height: 67px;
+    background-color: #12D692;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footerDiv-title{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+.footerDiv-title h2{
+    font-size: 20px;
+    margin-left: 10px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+.linkFooter{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    height: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footerDiv-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.footerDiv-contact h2{
+    text-align: center;
+}
+.footerDiv-contact div{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 768px){
+    .menu{
+        width: 70vw;
+    }
+    .buttonLink button{
+        bottom: 11px;
+        right: 5px;
+    }
+    .sectionHome{
+        width: 100vw;
+        height: 150vh;
+        background-position: center 65vh;
+    }
+    .sectionHome p:nth-child(1){
+        margin-top: 30px;
+    }
+    .sectionHome h1{
+        width: 90vw;
+        font-size: 36px;
+        margin-bottom: 80px;
+    }
+    .sectionHome img{
+        margin-bottom: 30px;
+        margin-left: 85px;
+    }
+    .sectionHome-textHome{
+        width: 90vw;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+    .sectionPrincipal{
+        width: 100vw;
+    }
+    .sectionPrincipal-divCourses-text{
+        width: 80%;
+        text-align: justify;
+    }
+    .sectionPrincipal-divSlider{
+        width: 50%;   
+    }
+    .sectionPrincipal-divLuv{
+        width: 90%;
+        height: 180vh;
+    }
+    .sectionPrincipal-divLuv h2{
+        font-size: 30px;
+    }
+    .sectionPrincipal-divLuv p{
+        text-align: left;
+        width: 70vw;
+    }
+    .sectionPrincipal-divTestimonial{
+        width: 98vw;
+        height: 200vh;
+        
+    }
+    .sectionPrincipal-divTestimonial-testimonialPerson{
+        width: 40%;
+    }
+    .sectionPrincipal-divTestimonial-purchaseDiv button{
+        position: absolute;
+        left: 285px;
+        top: 728vh;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 320px){
+    .sectionHome{
+        height: 170vh;
+    }
+    .sectionHome h1{
+        margin-bottom: 40px;
+    }
+    .buttonLink button{
+        bottom: 11px;
+        right: 5px;
+    }
+    .sectionHome img{
+        margin-bottom: 110px;
+        margin-left: 85px;
+    }
+    .sectionPrincipal-divCourses{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sectionPrincipal-divCourses h1{
+        width: 80%;
+    }
+    .sectionPrincipal-divCourses-text{
+        width: 80%;
+        text-align: justify;
+    }
+    .sectionPrincipal-divSlider{
+        width: 90%;
+    }
+    .sectionPrincipal-divSlider h2{
+        font-size: 1.6rem;
+    }
+    .sectionPrincipal-divSlider-div img{
+        width: 20px;
+    }
+    .sectionPrincipal-divLuv{
+        width: 90%;
+        height: 250vh;
+    }
+    .sectionPrincipal-divAssociate{
+        height: 120vh;
+    }
+    .sectionPrincipal-divAssociate h2{
+        font-size: 32px;
+        width: 90%;
+    }
+    .sectionPrincipal-divAssociate p{
+        width: 90%;
+        text-align: left;
+    }
+    .sectionPrincipal-divAssociate{
+        height: 160vh;
+    }
+    
+    .sectionPrincipal-divAssociate-divFirst{
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 300px;
+        margin-bottom: 100px;
+    }
+    .sectionPrincipal-divAssociate-divSecond{
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 300px;
+    }
+    .sectionPrincipal-divAssociate-div img{
+        width: 80px;
+        margin: 0;
+    }
+    .sectionPrincipal-divTestimonial{
+        width: auto;
+        height: 300vh;
+        
+    }
+    .sectionPrincipal-divTestimonial-testimonial h2{
+        width: 80%;
+        font-size: 30px;
+    }
+    .sectionPrincipal-divTestimonial-testimonialPerson{
+        width: 80%;
+    }
+    .sectionPrincipal-divTestimonial-purchase h2{
+        margin-left: 10px;
+    }
+    .sectionPrincipal-divTestimonial-purchase p{
+        margin-left: 10px;
+    }
+    .sectionPrincipal-divTestimonial-purchaseDiv{
+        border-radius: 10%;
+        width: 80%;
+        
+    }
+    .sectionPrincipal-divTestimonial-purchaseDiv button{
+        position: absolute;
+        left: 70px;
+        top: 1020vh;
+        border-radius: 10px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .sectionPrincipal-divTestimonial-Finish{
+        height: 100vh;
+    }
+}
